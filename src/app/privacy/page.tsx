@@ -3,9 +3,12 @@ export const metadata = {
   description: 'Our commitment to protecting your privacy.',
 };
 
+import BackButton from '@/components/BackButton';
+
 export default function PrivacyPage() {
   return (
     <div className="container" style={{ paddingTop: '3rem', maxWidth: '800px' }}>
+      <BackButton />
       <h1 className="title" style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--text-header)' }}>Privacy Policy</h1>
       <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>Last Updated: {new Date().toLocaleDateString()}</p>
 

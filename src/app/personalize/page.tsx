@@ -1,4 +1,5 @@
 import CategorySelector from '@/components/CategorySelector';
+import BackButton from '@/components/BackButton';
 import styles from './page.module.css';
 
 export const metadata = {
@@ -9,6 +10,7 @@ export const metadata = {
 export default function PersonalizePage() {
   return (
     <div className="container" style={{ paddingTop: '3rem' }}>
+      <BackButton />
       <header className={styles.header}>
         <h1 className={styles.title}>Personalize Your Feed</h1>
         <p className={styles.subtitle}>

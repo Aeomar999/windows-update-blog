@@ -3,6 +3,7 @@
 import { useCommunity } from '@/context/CommunityContext';
 import CreatePostForm from '@/components/community/CreatePostForm';
 import PostCard from '@/components/community/PostCard';
+import BackButton from '@/components/BackButton';
 import styles from './page.module.css';
 
 export default function CommunityPage() {
@@ -10,6 +11,9 @@ export default function CommunityPage() {
 
   return (
     <div className="container" style={{ paddingTop: '3rem' }}>
+      <div style={{ marginBottom: '1rem' }}>
+        <BackButton />
+      </div>
       <header className={styles.pageHeader}>
         <h1 className={styles.title}>Community Discussions</h1>
         <p className={styles.subtitle}>

@@ -9,6 +9,10 @@ export async function generateStaticParams() {
   }));
 }
 
+import BackButton from '@/components/BackButton';
+
+// ... (existing imports)
+
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
@@ -19,6 +23,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
   return (
     <article className={`container ${localStyles.articleContainer}`}>
+      <BackButton href="/" label="Back to Home" /> {/* Improve nav flow */}
       <header className={localStyles.header}>
         <div className={localStyles.meta}>
           <span className={localStyles.category}>{article.category}</span>

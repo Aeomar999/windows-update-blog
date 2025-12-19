@@ -9,8 +9,14 @@ export async function generateStaticParams() {
   }));
 }
 
+import BackButton from '@/components/BackButton';
+
+// ...
+
+// ...
+
 export default async function CategoryPage({ params }: { params: Promise<{ category: string }> }) {
-    const { category } = await params;
+  const { category } = await params;
   const articles = getArticlesByCategory(category);
   const categoryData = categories.find(c => c.slug === category);
 
@@ -20,6 +26,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ categ
 
   return (
     <div className="container" style={{ paddingTop: '3rem' }}>
+      <BackButton />
       <div style={{ marginBottom: '3rem', textAlign: 'center' }}>
         <h1 className={styles.title}>{categoryData.name} Updates</h1>
         <p className={styles.subtitle}>{categoryData.description}</p>
