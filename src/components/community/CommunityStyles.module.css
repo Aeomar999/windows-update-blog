@@ -1,0 +1,194 @@
+/* PostCard Styles */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-sm);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.authorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.author {
+    font-weight: 600;
+    color: var(--text-header);
+}
+
+.meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.categoryBadge {
+    background-color: rgba(0, 120, 212, 0.1);
+    color: var(--primary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-header);
+}
+
+.content {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    white-space: pre-wrap;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    border-top: 1px solid var(--card-border);
+    padding-top: 1rem;
+}
+
+.actionButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+
+.actionButton:hover {
+    color: var(--primary);
+}
+
+.activeAction {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* Create Post Form Styles */
+.formContainer {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.formTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.input,
+.textarea,
+.select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: inherit;
+    font-size: 0.95rem;
+}
+
+.textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submitButton {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: var(--primary-hover);
+}
+
+/* Comment Styles */
+.commentsSection {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--card-border);
+}
+
+.commentList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.comment {
+    background-color: var(--background);
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--card-border);
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25rem;
+    font-size: 0.85rem;
+}
+
+.commentAuthor {
+    font-weight: 600;
+    color: var(--text-header);
+}
+
+.commentDate {
+    color: var(--text-muted);
+}
+
+.commentContent {
+    font-size: 0.95rem;
+}
+
+.commentInput {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.commentInput input {
+    flex: 1;
+}
+
+.commentButton {
+    padding: 0 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}

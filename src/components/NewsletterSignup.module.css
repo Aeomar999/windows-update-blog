@@ -1,0 +1,97 @@
+.section {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--card-border);
+    padding: 4rem 1rem;
+    margin-top: 4rem;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-header);
+}
+
+.description {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+}
+
+.form {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.input {
+    flex: 1;
+    max-width: 350px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: border-color 0.2s;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 120, 212, 0.2);
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.button:hover:not(:disabled) {
+    background-color: var(--primary-hover);
+}
+
+.button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+}
+
+.success {
+    background-color: rgba(16, 124, 16, 0.1);
+    color: #107c10;
+}
+
+.error {
+    background-color: rgba(168, 0, 0, 0.1);
+    color: #a80000;
+}
+
+@media (max-width: 640px) {
+    .form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input {
+        max-width: 100%;
+    }
+}

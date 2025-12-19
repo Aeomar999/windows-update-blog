@@ -1,0 +1,109 @@
+.container {
+    margin-top: 1rem;
+}
+
+.groups {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.groupTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-header);
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.card:hover {
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.card.selected {
+    background-color: rgba(0, 120, 212, 0.1);
+    /* Light primary */
+    border-color: var(--primary);
+}
+
+.dark .card.selected {
+    background-color: rgba(76, 194, 255, 0.15);
+}
+
+.checkbox {
+    margin-bottom: 0.5rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 2px solid var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.selected .checkbox {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-header);
+}
+
+.description {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
+
+.actions {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: 1px solid var(--card-border);
+    background-color: var(--card-bg);
+    color: var(--foreground);
+}
+
+.button:hover {
+    background-color: var(--background);
+}
+
+.button.primary {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
