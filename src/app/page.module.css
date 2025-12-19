@@ -7,6 +7,8 @@
 
 .heroContent {
   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .title {
@@ -14,6 +16,7 @@
   letter-spacing: -0.03em;
   margin-bottom: 1rem;
   background: linear-gradient(120deg, var(--text-header), var(--primary));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
