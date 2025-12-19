@@ -1,0 +1,100 @@
+/* [project]/Desktop/IDEAS/UpdateHub/windows-update-blog/src/components/NewsletterSignup.module.css [app-client] (css) */
+.NewsletterSignup-module__LsjuTa__section {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--card-border);
+  margin-top: 4rem;
+  padding: 4rem 1rem;
+}
+
+.NewsletterSignup-module__LsjuTa__container {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.NewsletterSignup-module__LsjuTa__title {
+  color: var(--text-header);
+  margin-bottom: .75rem;
+  font-size: 1.75rem;
+}
+
+.NewsletterSignup-module__LsjuTa__description {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+.NewsletterSignup-module__LsjuTa__form {
+  justify-content: center;
+  gap: .5rem;
+  display: flex;
+}
+
+.NewsletterSignup-module__LsjuTa__input {
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius);
+  background-color: var(--background);
+  max-width: 350px;
+  color: var(--foreground);
+  flex: 1;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+  transition: border-color .2s;
+}
+
+.NewsletterSignup-module__LsjuTa__input:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 2px #0078d433;
+}
+
+.NewsletterSignup-module__LsjuTa__button {
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  border: none;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color .2s;
+}
+
+.NewsletterSignup-module__LsjuTa__button:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+.NewsletterSignup-module__LsjuTa__button:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.NewsletterSignup-module__LsjuTa__message {
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  padding: .5rem;
+  font-size: .9rem;
+}
+
+.NewsletterSignup-module__LsjuTa__success {
+  color: #107c10;
+  background-color: #107c101a;
+}
+
+.NewsletterSignup-module__LsjuTa__error {
+  color: #a80000;
+  background-color: #a800001a;
+}
+
+@media (max-width: 640px) {
+  .NewsletterSignup-module__LsjuTa__form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .NewsletterSignup-module__LsjuTa__input {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=9d9fd_windows-update-blog_src_components_NewsletterSignup_module_css_bad6b30c._.single.css.map*/

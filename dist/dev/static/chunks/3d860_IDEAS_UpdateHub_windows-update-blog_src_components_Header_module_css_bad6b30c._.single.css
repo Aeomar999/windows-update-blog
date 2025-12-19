@@ -1,0 +1,60 @@
+/* [project]/Desktop/IDEAS/UpdateHub/windows-update-blog/src/components/Header.module.css [app-client] (css) */
+.Header-module__JZU48q__header {
+  z-index: 50;
+  border-bottom: 1px solid var(--card-border);
+  background-color: var(--glass-bg);
+  -webkit-backdrop-filter: blur(12px);
+  width: 100%;
+  transition: all .3s;
+  position: sticky;
+  top: 0;
+}
+
+.Header-module__JZU48q__inner {
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  display: flex;
+}
+
+.Header-module__JZU48q__logo {
+  color: var(--text-header);
+  align-items: center;
+  gap: .5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  display: flex;
+}
+
+.Header-module__JZU48q__logoIcon {
+  color: var(--primary);
+}
+
+.Header-module__JZU48q__nav {
+  display: none;
+}
+
+.Header-module__JZU48q__navLinks {
+  gap: 2rem;
+  list-style: none;
+  display: flex;
+}
+
+.Header-module__JZU48q__navLink {
+  color: var(--text-muted);
+  font-size: .95rem;
+  font-weight: 500;
+  transition: color .2s;
+}
+
+.Header-module__JZU48q__navLink:hover, .Header-module__JZU48q__active {
+  color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .Header-module__JZU48q__nav {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=3d860_IDEAS_UpdateHub_windows-update-blog_src_components_Header_module_css_bad6b30c._.single.css.map*/

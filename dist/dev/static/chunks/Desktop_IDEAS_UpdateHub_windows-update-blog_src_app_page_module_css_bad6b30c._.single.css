@@ -1,0 +1,47 @@
+/* [project]/Desktop/IDEAS/UpdateHub/windows-update-blog/src/app/page.module.css [app-client] (css) */
+.page-module__8tsuCa__hero {
+  background: linear-gradient(135deg, var(--background) 0%, #0078d40d 100%);
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 3rem;
+  padding: 5rem 0;
+}
+
+.page-module__8tsuCa__heroContent {
+  max-width: 800px;
+}
+
+.page-module__8tsuCa__title {
+  letter-spacing: -.03em;
+  background: linear-gradient(120deg, var(--text-header), var(--primary));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+
+.page-module__8tsuCa__subtitle {
+  color: var(--text-muted);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.page-module__8tsuCa__sectionTitle {
+  border-bottom: 1px solid var(--card-border);
+  margin-bottom: 2rem;
+  padding-bottom: .5rem;
+  font-size: 1.75rem;
+}
+
+.page-module__8tsuCa__grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .page-module__8tsuCa__title {
+    font-size: 2rem;
+  }
+}
+
+/*# sourceMappingURL=Desktop_IDEAS_UpdateHub_windows-update-blog_src_app_page_module_css_bad6b30c._.single.css.map*/

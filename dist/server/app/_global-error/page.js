@@ -1,0 +1,11 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__364da65a._.js")
+R.c("server/chunks/ssr/Desktop_IDEAS_UpdateHub_windows-update-blog_6da1ab77._.js")
+R.c("server/chunks/ssr/dfeeb_next_dist_983d55e9._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__505de89c._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__9f2df96d._.js")
+R.c("server/chunks/ssr/dfeeb_next_dist_9e043a8d._.js")
+R.c("server/chunks/ssr/Desktop_IDEAS_UpdateHub_windows-update-blog_src_app_57306772._.js")
+R.c("server/chunks/ssr/8ce9f__next-internal_server_app__global-error_page_actions_4c8389cf.js")
+R.m(38615)
+module.exports=R.m(38615).exports

@@ -1,0 +1,68 @@
+/* [project]/Desktop/IDEAS/UpdateHub/windows-update-blog/src/components/ArticleCard.module.css [app-client] (css) */
+.ArticleCard-module__Ny6_Ja__card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--border-radius);
+  flex-direction: column;
+  height: 100%;
+  padding: 1.5rem;
+  transition: transform .2s, box-shadow .2s;
+  display: flex;
+}
+
+.ArticleCard-module__Ny6_Ja__card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
+  transform: translateY(-4px);
+}
+
+.ArticleCard-module__Ny6_Ja__meta {
+  color: var(--text-muted);
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: .8rem;
+  display: flex;
+}
+
+.ArticleCard-module__Ny6_Ja__category {
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 600;
+}
+
+.ArticleCard-module__Ny6_Ja__title {
+  color: var(--text-header);
+  margin-bottom: .75rem;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.ArticleCard-module__Ny6_Ja__excerpt {
+  color: var(--text-muted);
+  flex-grow: 1;
+  margin-bottom: 1.5rem;
+  font-size: .95rem;
+}
+
+.ArticleCard-module__Ny6_Ja__footer {
+  border-top: 1px solid var(--card-border);
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.ArticleCard-module__Ny6_Ja__readMore {
+  color: var(--primary);
+  align-items: center;
+  gap: .25rem;
+  font-size: .9rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.ArticleCard-module__Ny6_Ja__readMore:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=86ce3_UpdateHub_windows-update-blog_src_components_ArticleCard_module_css_bad6b30c._.single.css.map*/

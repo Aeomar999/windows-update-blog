@@ -1,0 +1,82 @@
+/* [project]/Desktop/IDEAS/UpdateHub/windows-update-blog/src/components/Footer.module.css [app-client] (css) */
+.Footer-module__dFDQ_a__footer {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--card-border);
+  margin-top: auto;
+  padding: 4rem 0 2rem;
+}
+
+.Footer-module__dFDQ_a__content {
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  display: grid;
+}
+
+.Footer-module__dFDQ_a__branding {
+  max-width: 400px;
+}
+
+.Footer-module__dFDQ_a__title {
+  margin-bottom: 1rem;
+}
+
+.Footer-module__dFDQ_a__description {
+  color: var(--text-muted);
+  font-size: .95rem;
+}
+
+.Footer-module__dFDQ_a__links {
+  justify-content: flex-end;
+  gap: 4rem;
+  display: flex;
+}
+
+.Footer-module__dFDQ_a__column h4 {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--text-header);
+  margin-bottom: 1.25rem;
+  font-size: .9rem;
+}
+
+.Footer-module__dFDQ_a__column ul {
+  list-style: none;
+}
+
+.Footer-module__dFDQ_a__column li {
+  margin-bottom: .75rem;
+}
+
+.Footer-module__dFDQ_a__column a {
+  color: var(--text-muted);
+  font-size: .95rem;
+  transition: color .2s;
+}
+
+.Footer-module__dFDQ_a__column a:hover {
+  color: var(--primary);
+}
+
+.Footer-module__dFDQ_a__copyright {
+  border-top: 1px solid var(--card-border);
+  text-align: center;
+  color: var(--text-muted);
+  padding-top: 2rem;
+  font-size: .875rem;
+}
+
+@media (max-width: 768px) {
+  .Footer-module__dFDQ_a__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .Footer-module__dFDQ_a__links {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=3d860_IDEAS_UpdateHub_windows-update-blog_src_components_Footer_module_css_bad6b30c._.single.css.map*/

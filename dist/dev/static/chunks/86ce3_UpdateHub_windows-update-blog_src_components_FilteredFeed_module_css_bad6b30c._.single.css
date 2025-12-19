@@ -1,0 +1,55 @@
+/* [project]/Desktop/IDEAS/UpdateHub/windows-update-blog/src/components/FilteredFeed.module.css [app-client] (css) */
+.FilteredFeed-module__XXhd_a__tabs {
+  border-bottom: 1px solid var(--card-border);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.FilteredFeed-module__XXhd_a__tab {
+  cursor: pointer;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid #0000;
+  padding: .75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all .2s;
+}
+
+.FilteredFeed-module__XXhd_a__tab:hover {
+  color: var(--primary);
+}
+
+.FilteredFeed-module__XXhd_a__tab.FilteredFeed-module__XXhd_a__active {
+  color: var(--text-header);
+  border-bottom-color: var(--primary);
+}
+
+.FilteredFeed-module__XXhd_a__grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  display: grid;
+}
+
+.FilteredFeed-module__XXhd_a__emptyState {
+  text-align: center;
+  background-color: var(--card-bg);
+  border-radius: var(--border-radius);
+  border: 1px dashed var(--card-border);
+  padding: 3rem;
+}
+
+.FilteredFeed-module__XXhd_a__personalizeLink {
+  color: var(--primary);
+  margin-top: 1rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.FilteredFeed-module__XXhd_a__personalizeLink:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=86ce3_UpdateHub_windows-update-blog_src_components_FilteredFeed_module_css_bad6b30c._.single.css.map*/
