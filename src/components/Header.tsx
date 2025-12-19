@@ -3,11 +3,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { usePreferences } from '@/context/PreferencesContext';
 import styles from './Header.module.css';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const { theme, toggleTheme } = usePreferences();
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
@@ -20,16 +22,26 @@ export default function Header() {
           WindowsUpdateBlog
         </Link>
         
-        <button 
-          className={`${styles.mobileToggle} ${isOpen ? styles.open : ''}`}
-          onClick={toggleMenu}
-          aria-label="Toggle navigation"
-          aria-expanded={isOpen}
-        >
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-          <span className={styles.bar}></span>
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <button 
+             onClick={toggleTheme} 
+             className={styles.themeToggle}
+             aria-label="Toggle Theme"
+          >
+            {theme === 'dark' ? '☀' : '☾'}
+          </button>
+
+          <button 
+            className={`${styles.mobileToggle} ${isOpen ? styles.open : ''}`}
+            onClick={toggleMenu}
+            aria-label="Toggle navigation"
+            aria-expanded={isOpen}
+          >
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+          </button>
+        </div>
 
         <nav className={`${styles.nav} ${isOpen ? styles.isOpen : ''}`}>
           <ul className={styles.navLinks}>

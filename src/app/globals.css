@@ -21,23 +21,22 @@
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #111111;
-    --foreground: #ffffff;
+/* Dark Theme (Class-based) */
+html.dark {
+  --background: #111111;
+  --foreground: #ffffff;
 
-    --primary: #4cc2ff;
-    --primary-hover: #0078d4;
+  --primary: #4cc2ff;
+  --primary-hover: #0078d4;
 
-    --card-bg: #1e1e1e;
-    --card-border: #333333;
+  --card-bg: #1e1e1e;
+  --card-border: #333333;
 
-    --text-muted: #a19f9d;
-    --text-header: #f3f2f1;
+  --text-muted: #a19f9d;
+  --text-header: #f3f2f1;
 
-    --glass-bg: rgba(30, 30, 30, 0.85);
-    --glass-border: rgba(255, 255, 255, 0.1);
-  }
+  --glass-bg: rgba(30, 30, 30, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.1);
 }
 
 * {
